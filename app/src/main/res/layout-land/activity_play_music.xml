@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Page where the music is played
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Activity Title -->
+    <TextView style="@style/PlayActTitle" />
+
+    <!-- Activity Guide -->
+    <TextView style="@style/PlayActGuide" />
+
+
+    <!-- Lyrics Window Parent -->
+    <RelativeLayout style="@style/PlayActRelLayLyricsParent">
+
+        <!-- Song Title -->
+        <TextView
+            android:id="@id/play_act_lyrics_title"
+            style="@style/PlayActSongTitle" />
+    </RelativeLayout>
+
+    <!-- SeekBar -->
+    <SeekBar
+        android:id="@id/play_act_seek_bar"
+        style="@style/PlayActSeekBar"/>
+
+    <!-- Button Parent -->
+    <RelativeLayout style="@style/PlayActRelLayButtonParent">
+
+        <!-- Space used for Alignment -->
+        <Space
+            android:id="@id/play_act_space"
+            style="@style/PlayActSpaceView"/>
+
+        <!-- Stop ImageView -->
+        <ImageView
+            android:id="@id/play_act_stop_img"
+            style="@style/PlayActStopBtn"/>
+
+        <!-- Play/Pause ImageView -->
+        <ImageView
+            android:id="@id/play_act_play_pause_img"
+            style="@style/PlayActPlayPauseBtn"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base application theme.
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorPrimaryDark</item>
+        <item name="android:colorForeground">@color/colorPrimaryLight</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/textColorPrimaryInverse</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorSecondaryInverse">@color/textColorSecondaryInverse</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+    </style>
+
+    <!-- customize Spinner -->
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                       Activity Guide Texts
+                                       ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+                                       ONE IN EACH ACTIVITY
+    -->
+    <!-- common style used by all activity guide texts -->
+    <style name="ParentStyleGuideTexts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/style_slightly_rounded_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_guide</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small.Inverse
+        </item>
+    </style>
+    <!-- common style used by all activity guide titles -->
+    <style name="ParentStyleGuideTitles">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/style_slightly_rounded_border</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <!-- MainActivity GuideText [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="MainActGuide" parent="ParentStyleGuideTexts">
+        <item name="android:layout_marginBottom">@dimen/space_small</item>
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:text">@string/main_act_guide</item>
+    </style>
+    <!-- MainActivity GuideTitle [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="MainActTitle" parent="ParentStyleGuideTitles">
+        <item name="android:layout_marginBottom">@dimen/space_small</item>
+        <item name="android:text">@string/main_act_title</item>
+    </style>
+    <!-- MainActivity GuideTitle LANDSCAPE [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="MainActTitleLandscape" parent="ParentStyleGuideTitles">
+        <item name="android:layout_margin">@dimen/space_small</item>
+        <item name="android:text">@string/main_act_title</item>
+    </style>
+    <!-- MainActivity GuideText LANDSCAPE [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="MainActGuideLandscape" parent="ParentStyleGuideTexts">
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:text">@string/main_act_guide</item>
+    </style>
+
+    <!-- BurningActivity GuideText [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="BurnActGuide" parent="ParentStyleGuideTexts">
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:text">@string/burn_act_guide</item>
+    </style>
+    <!-- BurningActivity GuideTitle [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="BurnActTitle" parent="ParentStyleGuideTitles">
+        <item name="android:layout_margin">@dimen/space_small</item>
+        <item name="android:text">@string/burn_act_title</item>
+    </style>
+
+    <!-- AboutBandActivity GuideText [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="AboutActGuide" parent="ParentStyleGuideTexts">
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:text">@string/about_act_guide</item>
+    </style>
+    <!-- AboutBandActivity GuideTitle [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="AboutActTitle" parent="ParentStyleGuideTitles">
+        <item name="android:layout_margin">@dimen/space_small</item>
+        <item name="android:text">@string/about_act_title</item>
+    </style>
+
+    <!-- AboutBandActivity GuideText [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="SampleActGuide" parent="ParentStyleGuideTexts">
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:text">@string/sample_act_guide</item>
+    </style>
+    <!-- AboutBandActivity GuideTitle [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="SampleActTitle" parent="ParentStyleGuideTitles">
+        <item name="android:layout_margin">@dimen/space_small</item>
+        <item name="android:text">@string/sample_act_title</item>
+    </style>
+
+    <!-- PurchaseActivity GuideText [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="PurchaseActGuide" parent="ParentStyleGuideTexts">
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:text">@string/purchase_act_guide</item>
+    </style>
+    <!-- PurchaseActivity GuideTitle [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="PurchaseActTitle" parent="ParentStyleGuideTitles">
+        <item name="android:layout_margin">@dimen/space_small</item>
+        <item name="android:text">@string/purchase_act_title</item>
+    </style>
+
+    <!-- PlayMusicActivity GuideText [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="PlayActGuide" parent="ParentStyleGuideTexts">
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:text">@string/play_act_guide</item>
+    </style>
+    <!-- PlayMusicActivity GuideTitle [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="PlayActTitle" parent="ParentStyleGuideTitles">
+        <item name="android:layout_margin">@dimen/space_small</item>
+        <item name="android:text">@string/play_act_title</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                         Main Activity
+                                         ¯¯¯¯¯¯¯¯¯¯¯¯¯
+                           [CONTENTS INSIDE LINEAR LAYOUT - vertical]
+    -->
+    <!-- ImageView on Top -->
+    <style name="MainActHeaderImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/img_main_header</item>
+    </style>
+    <!-- About Band TextView -->
+    <style name="MainActAbout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/space_tiny</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+        <item name="android:layout_marginStart">@dimen/space_large</item>
+        <item name="android:layout_marginEnd">@dimen/space_large</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/style_rounded_border_button_top</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/main_act_about_band</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+    </style>
+    <!-- MetalHead ImageView -->
+    <style name="MainActHead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginTop">@dimen/space_tiny</item>
+        <item name="android:layout_marginBottom">@dimen/space_tiny</item>
+        <item name="android:layout_marginStart">@dimen/space_large</item>
+        <item name="android:layout_marginEnd">@dimen/space_large</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/style_slightly_rounded_border</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/img_eddie_head</item>
+    </style>
+    <!-- Sample Music TextView -->
+    <style name="MainActSample">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/space_large</item>
+        <item name="android:layout_marginTop">@dimen/space_tiny</item>
+        <item name="android:layout_marginStart">@dimen/space_large</item>
+        <item name="android:layout_marginEnd">@dimen/space_large</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/style_rounded_border_button_bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/main_act_sample_music</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                       Burning Activity
+                                       ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+                                 [CONTENTS INSIDE FRAME LAYOUT]
+    -->
+    <!-- Background Image -->
+    <style name="BurnActImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/img_burning</item>
+    </style>
+    <!-- Fire Animation -->
+    <style name="BurnActAnim">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                      AboutBand Activity
+                                      ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+                           [CONTENTS INSIDE LINEAR LAYOUT - vertical]
+    -->
+    <!-- used for all images in this activity - change src in activity_about_band.xml -->
+    <style name="AboutImgParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/space_medium</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <!-- used for all text in this activity, except the guide text - change text in activity_about_band.xml  -->
+    <style name="AboutTxtParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/space_medium</item>
+        <item name="android:background">@drawable/style_slightly_rounded_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                      SampleList Activity
+                                               &
+                                      ListElement Layout
+                                     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!--
+        [CONTENTS INSIDE LINEAR LAYOUT - vertical]
+    -->
+    <!-- Image displayed at top -->
+    <style name="SampleActHeaderImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/img_sample_header</item>
+    </style>
+    <!-- ListView containing the titles -->
+    <style name="SampleActListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/style_rounded_border_mix</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">@dimen/space_large</item>
+        <item name="android:listSelector">@drawable/list_selector</item>
+        <item name="android:padding">@dimen/space_medium</item>
+    </style>
+    <!-- Button leading to the PurchaseActivity -->
+    <style name="SampleActPurchaseBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/btn_smallest</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/space_large</item>
+        <item name="android:layout_marginTop">@dimen/space_medium</item>
+        <item name="android:background">@drawable/style_rounded_border_button</item>
+        <item name="android:text">@string/sample_act_purchase_btn</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!--
+        Views inside each element of the ListView
+    -->
+    <!-- Layout Parent, Relative Layout -->
+    <style name="ListElementRelLayParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/style_rounded_border_secondary</item>
+        <item name="android:padding">@dimen/space_medium</item>
+    </style>
+    <!-- Album Year TextView [INSIDE RELATIVE LAYOUT] -->
+    <style name="ListElementYearTxt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginBottom">@dimen/space_small</item>
+        <item name="android:layout_toEndOf">@id/sample_act_cover</item>
+        <item name="android:background">@drawable/style_slightly_rounded_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <!-- Album Cover ImageView [INSIDE RELATIVE LAYOUT] -->
+    <style name="ListElementCoverImg">
+        <item name="android:layout_width">@dimen/list_element_cover</item>
+        <item name="android:layout_height">@dimen/list_element_cover</item>
+        <item name="android:layout_marginEnd">@dimen/space_small</item>
+        <item name="android:background">@drawable/style_slightly_rounded_border</item>
+    </style>
+
+    <!-- Linear Layout holding the Title and Album TextViews [INSIDE RELATIVE LAYOUT] -->
+    <style name="ListElementLinLayTexts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignBottom">@id/sample_act_cover</item>
+        <item name="android:layout_below">@id/sample_act_year</item>
+        <item name="android:layout_toRightOf">@id/sample_act_cover</item>
+        <item name="android:background">@drawable/style_slightly_rounded_border</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Song Title TextView [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="ListElementTitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginBottom">@dimen/space_small</item>
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body2</item>
+    </style>
+    <!-- Song Album TextView [INSIDE LINEAR LAYOUT - vertical] -->
+    <style name="ListElementAlbumText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                      Purchase Activity
+                                      ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+                           [CONTENTS INSIDE LINEAR LAYOUT - vertical]
+    -->
+    <!-- PurchaseScreen Header Image -->
+    <style name="PurchaseActHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginEnd">@dimen/space_large</item>
+        <item name="android:layout_marginStart">@dimen/space_large</item>
+        <item name="android:layout_marginTop">@dimen/space_large</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/img_purchase_header</item>
+    </style>
+    <!-- Linear Layout Parent holding all elements except the GuideTitle, -Text and Header -->
+    <style name="PurchaseActLinParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:background">@drawable/style_rounded_border_mix</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/space_medium</item>
+    </style>
+    <!-- Text on top -->
+    <style name="PurchaseActFillText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/space_large</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/purchase_act_filler</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+    </style>
+    <!-- Spinner -->
+    <style name="PurchaseActSpinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+        <item name="android:layout_marginBottom">@dimen/space_large</item>
+        <item name="android:layout_marginEnd">@dimen/space_medium</item>
+        <item name="android:layout_marginStart">@dimen/space_medium</item>
+        <item name="android:layout_marginTop">@dimen/space_medium</item>
+        <item name="android:background">@drawable/style_rounded_border_mix</item>
+    </style>
+    <!-- Order Button -->
+    <style name="PurchaseActOrderBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/space_huge</item>
+        <item name="android:layout_marginEnd">@dimen/space_huge</item>
+        <item name="android:layout_marginStart">@dimen/space_huge</item>
+        <item name="android:layout_marginTop">@dimen/space_medium</item>
+        <item name="android:background">@drawable/style_rounded_border_button</item>
+        <item name="android:text">@string/purchase_act_btn</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                      PlayMusic Activity
+                                      ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+                           [CONTENTS INSIDE LINEAR LAYOUT - vertical]
+    -->
+    <!-- Relative Layout holding the lyrics, title and background image -->
+    <style name="PlayActRelLayLyricsParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginBottom">@dimen/space_small</item>
+        <item name="android:layout_marginEnd">@dimen/space_large</item>
+        <item name="android:layout_marginStart">@dimen/space_large</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/style_rounded_border_mix</item>
+    </style>
+    <!-- Background Image [INSIDE RELATIVE LAYOUT] -->
+    <style name="PlayActImgBG">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/play_act_lyrics_title</item>
+        <item name="android:layout_margin">@dimen/space_large</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:alpha">0.4</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/img_lyrics_bg</item>
+    </style>
+    <!-- Title TextView [INSIDE RELATIVE LAYOUT] -->
+    <style name="PlayActSongTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/space_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Headline</item>
+    </style>
+    <!-- ScrollView for the lyrics TextView [INSIDE RELATIVE LAYOUT] -->
+    <style name="PlayActLyricsScrollV">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/play_act_lyrics_title</item>
+        <item name="android:padding">@dimen/space_medium</item>
+    </style>
+    <!-- Lyrics TextView [INSIDE SCROLL VIEW] -->
+    <style name="PlayActLyricsText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/space_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <!-- SeekBar -->
+    <style name="PlayActSeekBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/space_huge</item>
+        <item name="android:layout_marginStart">@dimen/space_huge</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+        <item name="android:max">100</item>
+        <item name="android:background">@drawable/style_rounded_border_mix</item>
+    </style>
+
+    <!-- Relative Layout holding the button ImageViews on the bottom -->
+    <style name="PlayActRelLayButtonParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/space_medium</item>
+        <item name="android:background">@drawable/style_rounded_border_mix</item>
+        <item name="android:padding">@dimen/space_medium</item>
+    </style>
+    <!-- SpaceView used for alignment [INSIDE RELATIVE LAYOUT] -->
+    <style name="PlayActSpaceView">
+        <item name="android:layout_width">@dimen/space_huge</item>
+        <item name="android:layout_height">@dimen/playback_icon_dimen</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <!-- Stop Playback ImageView [INSIDE RELATIVE LAYOUT] -->
+    <style name="PlayActStopBtn">
+        <item name="android:layout_width">@dimen/playback_icon_dimen</item>
+        <item name="android:layout_height">@dimen/playback_icon_dimen</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:layout_marginTop">@dimen/space_medium</item>
+        <item name="android:layout_toStartOf">@id/play_act_space</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/img_playback_stop</item>
+    </style>
+    <!-- Start/Pause Playback ImageView [INSIDE RELATIVE LAYOUT] -->
+    <style name="PlayActPlayPauseBtn">
+        <item name="android:layout_width">@dimen/playback_icon_dimen</item>
+        <item name="android:layout_height">@dimen/playback_icon_dimen</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginBottom">@dimen/space_medium</item>
+        <item name="android:layout_marginTop">@dimen/space_medium</item>
+        <item name="android:layout_toEndOf">@id/play_act_space</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <!--_________________________________________________________________________________________-->
+</resources>

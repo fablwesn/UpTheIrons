@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        MainActivity | HomeScreen "Buttons"
+    -->
+    <!-- Top Text leading to the AboutBand Activity -->
+    <item name="main_act_text_about" type="id"/>
+    <!-- Middle Image, talking to MetalHead -->
+    <item name="main_act_image_metal_head" type="id"/>
+    <!-- Bottom Text leading to the SampleListTitle Activity -->
+    <item name="main_act_text_sample" type="id"/>
+
+    <!--
+        BurningActivity
+    -->
+    <!-- animated background view -->
+    <item name="burning_act_animation" type="id"/>
+
+    <!--
+        SampleListActivity
+    -->
+    <!-- Purchase Button -->
+    <item name="sample_act_purchase_btn" type="id"/>
+
+    <!-- ListView -->
+    <item name="sample_act_list" type="id"/>
+    <!-- ListView Content YearTxt -->
+    <item name="sample_act_year" type="id"/>
+    <!-- ListView Content CoverImg -->
+    <item name="sample_act_cover" type="id"/>
+    <!-- ListView Content TitleTxt -->
+    <item name="sample_act_title" type="id"/>
+    <!-- ListView Content AlbumTxt -->
+    <item name="sample_act_album" type="id"/>
+
+    <!--
+            PurchaseActivity
+     -->
+    <!-- Spinner -->
+    <item name="purchase_act_spinner" type="id"/>
+    <!-- Order Button -->
+    <item name="purchase_act_order_btn" type="id"/>
+
+    <!--
+            PlayMusicActivity
+     -->
+    <!-- TextView for the LyricsHeadline -->
+    <item name="play_act_lyrics_title" type="id"/>
+    <!-- TextView for the Lyrics -->
+    <item name="play_act_lyrics" type="id"/>
+
+    <!-- SeekBar -->
+    <item name="play_act_seek_bar" type="id"/>
+    <!-- SpaceView for alignment -->
+    <item name="play_act_space" type="id"/>
+    <!-- Play/Pause Button ImageView -->
+    <item name="play_act_play_pause_img" type="id"/>
+    <!-- Stop Button ImageView -->
+    <item name="play_act_stop_img" type="id"/>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Page to chose album to buy
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Activity Title -->
+    <TextView style="@style/PurchaseActTitle" />
+
+    <!-- Activity Guide Text -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_controlled"
+        android:layout_margin="@dimen/space_medium"
+        android:layout_weight="1">
+        <!-- Activity Guide Text -->
+        <TextView style="@style/PurchaseActGuide" />
+    </ScrollView>
+
+    <!-- Spinner containing the albums -->
+    <Spinner
+        android:id="@id/purchase_act_spinner"
+        style="@style/PurchaseActSpinner" />
+
+    <!-- Order Button -->
+    <Button
+        android:id="@id/purchase_act_order_btn"
+        style="@style/PurchaseActOrderBtn" />
+
+</LinearLayout>

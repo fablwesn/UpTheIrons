@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- is this good to do or should I just hardcode 0dp? Just thinking about readability -->
+    <dimen name="weight_controlled">0dp</dimen>
+
+    <!-- default margin values -->
+    <dimen name="space_tiny">2dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    <dimen name="space_medium">8dp</dimen>
+    <dimen name="space_large">16dp</dimen>
+    <dimen name="space_huge">32dp</dimen>
+
+    <!-- height of the smallest button-size allowed -->
+    <dimen name="btn_smallest">56dp</dimen>
+
+    <!-- height of the cover images in the SampleListActivity -->
+    <dimen name="list_element_cover">96dp</dimen>
+
+    <!-- playback button sizes -->
+    <dimen name="playback_icon_dimen">56dp</dimen>
+
+    <!--
+        TextSizes
+     -->
+    <dimen name="text_guide">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+
+</resources>

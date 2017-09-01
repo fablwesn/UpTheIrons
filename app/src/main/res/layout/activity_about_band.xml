@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+    displays info about the band
+
+    accessed through the MainActivity
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Activity Title -->
+    <TextView style="@style/AboutActTitle"/>
+
+    <!-- Activity Guide Text -->
+    <TextView style="@style/AboutActGuide" />
+
+    <!-- ScrollView Parent containing all info
+         ScrollBar visible at all times -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">
+
+        <!-- Containing 4 ImageViews and 4 TextViews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Members Img -->
+            <ImageView
+                style="@style/AboutImgParentStyle"
+                android:src="@drawable/img_about_member" />
+            <!-- Short Summary -->
+            <TextView
+                style="@style/AboutTxtParentStyle"
+                android:text="@string/about_act_introduction" />
+            <!-- Header Img -->
+            <ImageView
+                style="@style/AboutImgParentStyle"
+                android:src="@drawable/img_about_header" />
+            <!-- Current Members Listing -->
+            <TextView
+                style="@style/AboutTxtParentStyle"
+                android:text="@string/about_act_members_current" />
+            <!-- Former Members Listing -->
+            <TextView
+                style="@style/AboutTxtParentStyle"
+                android:text="@string/about_act_members_former"/>
+            <!-- Filler Img -->
+            <ImageView
+                style="@style/AboutImgParentStyle"
+                android:src="@drawable/img_about_middle" />
+            <!-- Musical Style -->
+            <TextView
+                style="@style/AboutTxtParentStyle"
+                android:text="@string/about_act_influences"/>
+            <!-- Footer Img -->
+            <ImageView
+                style="@style/AboutImgParentStyle"
+                android:src="@drawable/img_about_footer" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

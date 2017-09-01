@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Colors of the Theme -->
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryLight">#3d3d3d</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <!-- Accent Colors of the Theme -->
+
+    <color name="colorAccent">#FECE66</color>
+    <color name="colorAccentLight">#FFE59E</color>
+
+    <!--
+        Text Colors
+     -->
+    <!-- default -->
+    <color name="textColorPrimary">#E8EAF6</color>
+    <color name="textColorSecondary">#B3E8EAF6</color>
+    <!-- inverse -->
+    <color name="textColorPrimaryInverse">#D9000000</color>
+    <color name="textColorSecondaryInverse">#8C000000</color>
+
+</resources>

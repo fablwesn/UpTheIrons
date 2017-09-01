@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+    BurnPage, displayed when the user taps 17 times on Eddie on the StartPage
+    and waits for 5 seconds afterwards
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Activity Title -->
+    <TextView style="@style/BurnActTitle"/>
+
+    <!-- Activity Guide Text -->
+    <TextView style="@style/BurnActGuide" />
+
+    <!-- Parent for the BG Image and the Animation on top -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background ImageView -->
+        <ImageView style="@style/BurnActImg" />
+
+        <!-- animated fire on runtime -->
+        <View
+            android:id="@id/burning_act_animation"
+            style="@style/BurnActAnim" />
+    </FrameLayout>
+</LinearLayout>

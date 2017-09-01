@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+    Displays songs to listen to and a Button leading to the purchase activity
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Activity Title -->
+    <TextView style="@style/SampleActTitle" />
+
+    <!-- Activity Guide -->
+    <TextView style="@style/SampleActGuide" />
+
+    <!-- Song List -->
+    <ListView
+        android:id="@id/sample_act_list"
+        style="@style/SampleActListView">
+    </ListView>
+
+    <!-- Purchase Button -->
+    <Button android:id="@id/sample_act_purchase_btn"
+        style="@style/SampleActPurchaseBtn" />
+</LinearLayout>

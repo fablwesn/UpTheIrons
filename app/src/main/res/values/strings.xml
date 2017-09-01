@@ -1,0 +1,1073 @@
+<resources>
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                           Activity Labels
+                                           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- AppName & MainActivity Label for the Home Screen [CHAR LIMIT=15] -->
+    <string name="app_name" translatable="false">Up The Irons</string>
+
+    <!-- Activity Label for the Burning Activity [CHAR LIMIT=35] -->
+    <string name="burn_act_label">Got a Marshmallow?</string>
+    <!-- Activity Label for the AboutBand Activity [CHAR LIMIT=35] -->
+    <string name="about_act_label">About the Band</string>
+    <!-- Activity Label for the SampleListTitle Activity [CHAR LIMIT=35] -->
+    <string name="sample_act_label">Select a Masterpiece</string>
+    <!-- Activity Label for the SampleListTitle Activity, filled with title chosen on runtime [CHAR LIMIT=15] -->
+    <string name="play_act_label">Now Playing:</string>
+    <!-- Activity Label for the SampleListTitle Activity [CHAR LIMIT=35] -->
+    <string name="purchase_act_label">Buy a Song</string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                    Activity Guide Titles & Texts
+                                    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- MainActivity Explanation [NO CHAR LIMIT] -->
+    <string name="main_act_guide">
+        TextViews below take the user to the corresponding page.\n
+        The user can return anytime using the physical back-button\n\n
+        MetalHead is for fun, you can tap-talk with it!\n
+        And after tapping him 17 times, he will start a counter opening the Burning Activity on finish (๑•́ ₃ •̀๑)
+    </string>
+    <!-- MainActivity Title [CHAR LIMIT=25] -->
+    <string name="main_act_title">Start Page</string>
+
+    <!-- BurningActivity Explanation [NO CHAR LIMIT] -->
+    <string name="burn_act_guide">
+        This activity is just for fun.\n
+        nothing really happens here, in fact\n
+        as the app burns away, it will\n
+        close itself after 10 seconds.\n\n
+        (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ I hope you enjoy the animation~ ʘ‿ʘ
+    </string>
+    <!-- BurningActivity Title [CHAR LIMIT=25] -->
+    <string name="burn_act_title">Termination Page</string>
+
+    <!-- AboutBandActivity Explanation [NO CHAR LIMIT] -->
+    <string name="about_act_guide">This Activity displays information and visual content about the band.\nReturn via physical back button.
+    </string>
+    <!-- AboutBandActivity Title [CHAR LIMIT=25] -->
+    <string name="about_act_title">Meet the Irons</string>
+
+    <!-- SampleListActivity Explanation [NO CHAR LIMIT] -->
+    <string name="sample_act_guide">Here the user can select a song from the list below to listen to.\n
+        The List is filled dynamically.\n\n
+        Selecting a song will start the PlayMusic Activity.\nTapping the bottom button starts the PurchaseActivity
+    </string>
+    <!-- SampleListActivity Title [CHAR LIMIT=25] -->
+    <string name="sample_act_title">Listen To or Purchase Songs</string>
+
+    <!-- PurchaseActivity Explanation [NO CHAR LIMIT] -->
+    <string name="purchase_act_guide">Here you can select an album in the Spinner and buy it through the button on the bottom.\n\n
+        I\'d use the In-app Billing API from Google Play. To do so, I\'d have to:\n\n
+        add the library to my project\n
+        update my AndroidManifest.xml\n
+        Create a ServiceConnection and bind it to the IInAppBillingService\n
+        Send In-App Billing requests to IInAppBillingService\n
+        handle the response from Google Play
+    </string>
+    <!-- PurchaseActivity Title [CHAR LIMIT=25] -->
+    <string name="purchase_act_title">Choose Album to Buy</string>
+
+    <!-- PlayMusicActivity Explanation [NO CHAR LIMIT] -->
+    <string name="play_act_guide">The selected title would be played here. Instead, Toasts are shown on random positions across the screen, with a variety of random text.\nThe ImageView buttons manipulate the SeekBar and the musicToasts displayed.\nReturn via the physical back button.\n\nalso, the appropriate lyrics are being displayed, if in portrait mode.
+    </string>
+    <!-- PlayMusicActivity Title [CHAR LIMIT=25] -->
+    <string name="play_act_title">Media Activity</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                       Main Activity Strings
+                                       ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Top Text leading to the AboutBand Activity [CHAR LIMIT=25] -->
+    <string name="main_act_about_band">About the Band</string>
+    <!-- Bottom Text leading to the SampleListTitle Activity [CHAR LIMIT=25] -->
+    <string name="main_act_sample_music">Music Samples</string>
+
+    <!-- Eddie the Head Texts, in order of appearance (depending on times tapped) [NO CHAR LIMIT]  -->
+    <string name="eddie_case_one">Oh&#8230;hello there ! (⊙.⊙)7 </string>
+    <string name="eddie_case_three"> (´･_･`) </string>
+    <string name="eddie_case_five">would you please stop it&#8230;ಠ_ಠ </string>
+    <string name="eddie_case_seven">Don\'t you know who I am ?! ლ(｀ー´ლ) </string>
+    <string name="eddie_case_ten">(╬ ಠ益ಠ) F**IN&#8230;STOP&#8230;KNOCKING t(-_-t) </string>
+    <string name="eddie_case_fourteen">yeah&#8230;just you continue&#8230;(⊙_◎)</string>
+    <string name="eddie_case_warning">Ok&#8230;\nGood.\n\nYou\'ll have exactly 10 seconds to leave or I\'ll burn your phone down ミ●﹏⊙ミ
+    </string>
+    <string name="eddie_case_nero">MWAHAHAHAHAHA, BURN щ（ﾟДﾟщ）</string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                    AboutBand Activity Strings
+                                    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Listing current Band Member -->
+    <string name="about_act_members_current">
+        Current members\n\n
+
+        Steve Harris – bass, backing vocals (1975–present), keyboards (1988, 1998–present)\n\n
+        Dave Murray – guitars (1976–1977, 1978–present)\n\n
+        Adrian Smith – guitars, backing vocals (1980–1990, 1999–present), keyboards (1988)\n\n
+        Bruce Dickinson – lead vocals (1981–1993, 1999–present), piano (2015)\n\n
+        Nicko McBrain – drums, percussion (1982–present)\n\n
+        Janick Gers – guitars (1990–present)\n\n\n
+
+        Michael Kenney – keyboards (1988–present)</string>
+
+    <!-- Listing former Band Member -->
+    <string name="about_act_members_former">
+        Former members\n\n
+
+        Doug Sampson – drums, percussion (1977–1979)\n\n
+        Paul Di\'Anno – lead vocals (1978–1981)\n\n
+        Dennis Stratton – guitars, backing vocals (1979–1980)\n\n
+        Clive Burr – drums, percussion (1979–1982)\n\n
+        Blaze Bayley – lead vocals (1994–1999)</string>
+
+    <!-- introducing text to the band -->
+    <string name="about_act_introduction">Iron Maiden are an English heavy metal band formed in Leyton, East London, in 1975 by bassist and primary songwriter Steve Harris.
+        The band\'s discography has grown to thirty-eight albums, including sixteen studio albums, eleven live albums, four EPs, and seven compilations.</string>
+
+    <!-- their style and influences -->
+    <string name="about_act_influences">
+        Musical style and influences\n\n
+
+        Steve Harris, Iron Maiden\'s bassist and primary songwriter, has stated that his influences include Black Sabbath, Deep Purple, Led Zeppelin, Uriah Heep, Pink Floyd, Genesis, Yes, Jethro Tull, Thin Lizzy, UFO and Wishbone Ash. In 2010 Harris stated, "I think if anyone wants to understand Maiden\'s early thing, in particular the harmony guitars, all they have to do is listen to Wishbone Ash's Argus album. Thin Lizzy too, but not as much. And then we wanted to have a bit of a prog thing thrown in as well, because I was really into bands like Genesis and Jethro Tull. So you combine all that with the heavy riffs and the speed, and you've got it." In 2004, Harris explained that the band\'s "heaviness" was inspired by "Black Sabbath and Deep Purple with a bit of Zeppelin thrown in." On top of this, Harris developed his own playing style, which guitarist Janick Gers describes as "more like a rhythm guitar" cited as responsible for the band\'s galloping style, heard in such songs as "The Trooper" and "Run to the Hills".\n\n
+        The band\'s guitarists, Dave Murray, Adrian Smith and Janick Gers, each have their own individual influences and playing style. Dave Murray is known for his legato technique which, he claims, "evolved naturally. I\'d heard Jimi Hendrix using legato when I was growing up, and I liked that style of playing." Stating that he "was inspired by blues rock rather than metal," Adrian Smith was influenced by Johnny Winter and Pat Travers, leading to him becoming a "melodic player." Janick Gers, on the other hand, prefers a more improvised style, largely inspired by Ritchie Blackmore, which he claims is in contrast to Smith\'s "rhythmic" sound.\n\n
+        Singer Bruce Dickinson, who typically works in collaboration with guitarist Adrian Smith, has an operatic vocal style, inspired by Arthur Brown, Peter Hammill, Ian Anderson and Ian Gillan, and is often considered to be one of the best heavy metal vocalists of all time. Although Nicko McBrain has only received one writing credit, on the Dance of Death album, Harris often relies on him while developing songs. Adrian Smith commented, "Steve loves playing with him. They used to work for hours going over these bass and drum patterns."\n\n
+        Throughout their career, the band\'s style has remained largely unchanged, in spite of the addition of guitar synthesisers on 1986\'s Somewhere in Time, keyboards on 1988\'s Seventh Son of a Seventh Son, and an attempt to return to the "stripped down" production of their earlier material on 1990\'s No Prayer for the Dying. In recent years, however, the band have begun using more progressive elements in their songs, which Steve Harris describes as not progressive "in the modern sense, but like Dream Theater, more in a 70s way". According to Harris, Seventh Son of a Seventh Son was the band\'s first album which was "more progressive", while they would only return to this style from 1995\'s The X Factor, which he states is "like an extension of Seventh Son, in the sense of the progressive element to it". The development contrasts with the band\'s raw sounding earlier material, which AllMusic states was "clearly drawing from elements of punk rock", although Harris firmly denies this.
+    </string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                  SampleListTitle Activity Strings
+                                  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!--
+        Array of SongTitles, all Studio Albums available (Image shown is chosen from this) so to add songs just add a string
+        in this format:
+                            "album :albumYear:title"
+        whereas "album" and "albumYear" need to be one of the already used below (!)
+         the space after the album is used to avoid cutoff letters, because italic style is used on them -->
+
+    <string-array name="sample_act_titles">
+        <item>Iron Maiden :1980:Phantom of the Opera</item>
+        <item>Killers :1981:Murders in the Rue Morgue</item>
+        <item>The Number of the Beast :1982:Hallowed Be Thy Name</item>
+        <item>Pieces of Mind :1983:Flight of Icarus</item>
+        <item>Powerslave :1984:Aces High</item>
+        <item>Somewhere in Time :1986:Wasted Years</item>
+        <item>Seventh Son of a Seventh Son :1988:The Evil That Man Do</item>
+        <item>No Prayer for the Dying :1990:Bring Your Daughter&#8230;to the Slaughter</item>
+        <item>Fear of the Dark :1992:Wasting Love</item>
+        <item>The X Factor :1995:Fortunes of War</item>
+        <item>Virtual XI :1998:The Clansman</item>
+        <item>Brave New World :2000:The Mercenary</item>
+        <item>Dance of Death :2003:Paschendale</item>
+        <item>A Matter of Life and Death :2006:The Longest Day</item>
+        <item>The Final Frontier :2010:When the Wild Wind Blows</item>
+        <item>The Book of Souls :2015:Speed of Light</item>
+    </string-array>
+
+    <!-- Purchase Button Text -->
+    <string name="sample_act_purchase_btn">purchase\nsongs</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                    Purchase Activity Strings
+                                    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Text at the top -->
+    <string name="purchase_act_filler">Add one of their FULL Albums to your\n
+        Google PlayMusic Library!\n\n
+        “ヽ(´▽｀)ノ”</string>
+    <!-- PurchaseButton Text -->
+    <string name="purchase_act_btn">order\nalbum</string>
+
+    <!-- Spinner content for selecting album to buy -->
+    <string-array name="purchase_act_spinner_albums">
+        <item>choose album</item>
+        <item>1980 - Iron Maiden</item>
+        <item>1981 - Killers</item>
+        <item>1982 - The Number of The Beast</item>
+        <item>1983 - Pieces of Mind</item>
+        <item>1984 - Powerslave</item>
+        <item>1986 - Somewhere in Time</item>
+        <item>1988 - Seventh Son of a Seventh Son</item>
+        <item>1990 - No Prayer for the Dying</item>
+        <item>1992 - Fear of the Dark</item>
+        <item>1995 - The X Factor</item>
+        <item>1998 - Virtual XI</item>
+        <item>2000 - Brave New World</item>
+        <item>2003 - Dance of Death</item>
+        <item>2006 - A Matter of Life and Death</item>
+        <item>2010 - The Final Frontier</item>
+        <item>2015 - The Book of Souls</item>
+    </string-array>
+
+    <!-- Purchase Toast -->
+    <string name="purchase_act_toast">ORDER SENT</string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                        PlayMusic Activity
+                                        ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Toast while playing -->
+    <string-array name="play_act_music_toast">
+        <item>&#9833; ヽ(´▽`)/</item>
+        <item>(づ￣ ³￣)づ &#9834;</item>
+        <item>┌(ㆆ㉨ㆆ)ʃ &#9835;</item>
+        <item>&#9836; “ヽ(´▽｀)ノ”</item>
+        <item>(っ•́｡•́)♪♬</item>
+    </string-array>
+    <!--
+                                            Song Lyrics
+                                        [DO NOT TRANSLATE]
+    -->
+    <!-- title -->
+    <string name="play_act_lyrics_title">%1$s\nLyrics</string>
+    <!-- Lyrics Phantom of the Opera -->
+    <string name="play_act_lyrics_00" translatable="false">
+        I\'ve been looking so long for you now\n
+        You won\'t get away from my grasp\n
+        You\'ve been living so long in hiding\n
+        And hiding behind that false mask\n
+        You know, and I know that you ain\'t got long now to last\n
+        Your looks and your feelings are just the remains of your past\n
+
+        You\'re standing in the wings\n
+        There you wait for the curtain to fall\n
+        And knowing the terror and holding you have on us all\n
+        Now, I know that you\'re gonna scratch me and maim me and maul\n
+        And you know I\'m helpless from your mesmerizing cat call\n\n
+
+        Keep your distance, walk away, don\'t take his bait\n
+        Don\'t you stray, don\'t fade away, yeah\n
+        Watch your step, he\'s out to get you, come what may\n
+        Don\'t you stray from the narrow way, yeah\n\n
+
+        I\'m running and hiding in my dreams, you\'re always there\n
+        You\'re the Phantom of the Opera\n
+        You\'re the devil, you\'re just out to scare\n
+        You damaged my mind and my soul, it just floats through the air\n
+        You haunt me, you taunt me\n
+        You torture me back at your lair\n
+
+        Torture me back at your lair\n
+    </string>
+    <!-- Lyrics Murders in the Rue Morgue -->
+    <string name="play_act_lyrics_01" translatable="false">
+        I remember it as plain as day\n
+        Although it happened in the dark of the night\n
+        I was strolling through the streets of Paris\n
+        And it was cold it was starting to rain\n
+        And then I heard a piercing scream\n
+        And I rushed to the scene of the crime\n
+        But all I found was the butchered remains\n
+        Of two girls lay side by side\n\n
+
+        Murders in the Rue Morgue\n
+        Someone call the Gendarmes\n
+        Murders in the Rue Morgue\n
+        Vite before the killers go free\n\n
+
+        There\'s some people coming down the street\n
+        At last there\'s someone heard my call\n
+        I can\'t understand why they\'re pointing at me\n
+        I never done nothing at all\n
+        But I must have got some blood on my hands\n
+        Because everyone\'s shouting at me\n
+        I can\'t speak French so I couldn\'t explain\n
+        And like a fool I started running away\n\n
+
+        Murders in the Rue Morgue\n
+        Someone call the Gendarmes\n
+        Murders in the Rue Morgue\n
+        Am I ever gonna be free\n\n
+
+        And now I\'ve gotta get away from the arms of the law\n
+        All France is looking for me\n
+        I\'ve gotta find my way across the border for sure\n
+        Down the south to Italy\n\n
+
+        Murders in the Rue Morgue\n
+        Someone call the Gendarmes\n
+        Murders in the Rue Morgue\n
+        I\'m never coming home\n\n
+
+        Well I made it to the border at last\n
+        But I can\'t erase the scene from my mind\n
+        Anytime somebody stares at me, well\n
+        I just start running blind\n
+        Well I\'m moving through the shadows at night\n
+        Away from the staring eyes\n
+        Any day they\'ll be looking for me\n
+        Cause I know I show the signs of\n\n
+
+        Murders in the Rue Morgue\n
+        Someone call the Gendarmes\n
+        Murders in the Rue Morgue\n
+        Running from the arms of the law\n\n
+
+        Murders in the Rue Morgue\n
+        Someone call the Gendarmes\n
+        Murders in the Rue Morgue\n
+        Am I ever gonna be free\n\n
+
+        It took so long and I\'m getting so tired\n
+        I\'m running out of places to hide\n
+        Should I return to the scene of the crime\n
+        Where the two young victims died\n
+        If I could go to somebody for help\n
+        To get me out of trouble for sure\n
+        But I know that inside my mind\n
+        Well I\'ve got to say I\'ve done it before\n\n
+
+        Murders in the Rue Morgue\n
+        Someone call the Gendarmes\n
+        Murders in the Rue Morgue\n
+        I\'m never going home\n
+    </string>
+    <!-- Lyrics Hallow Be Thy Name -->
+    <string name="play_act_lyrics_02" translatable="false">
+        I\'m waiting in my cold cell, when the bell begins to chime\n
+        Reflecting on my past life and it doesn\'t have much time\n
+        Cause at 5 o\'clock they take me to the Gallows Pole\n
+        The sands of time for me are running low\n\n
+        
+        When the priest comes to read me the last rites\n
+        I take a look through the bars at the last sights\n
+        Of a world that has gone very wrong for me\n\n
+        
+        Can it be that there\'s some sort of error?\n
+        Hard to stop the surmounting terror\n
+        Is it really the end, not some crazy dream?\n\n
+        
+        Somebody please tell me that I\'m dreaming\n
+        It\'s not easy to stop from screaming\n
+        But words escape me when I try to speak\n\n
+        
+        Tears fall but why am I crying?\n
+        After all I\'m not afraid of dying\n
+        Don\'t I believe that there never is an end?\n\n
+        
+        As the guards march me out to the courtyard\n
+        Somebody cries from a cell God be with you\n
+        If there\'s a God then why has he let me go?\n\n
+        
+        As I walk all my life drifts before me\n
+        And though the end is near I\'m not sorry\n
+        Catch my soul cause it\'s willing to fly away\n\n
+        
+        Mark my words please believe my soul lives on\n
+        Please don\'t worry now that I have gone\n
+        I\'ve gone beyond to see the truth\n\n
+        
+        When you know that your time is close at hand\n
+        Maybe then you\'ll begin to understand\n
+        Life down here is just a strange illusion\n\n
+        
+        Yeah, yeah, yeah&#8230;Hallowed be Thy name\n\n
+        Yeah, yeah, yeah&#8230;Hallowed be Thy name\n\n
+        Yeah\n
+    </string>
+    <!-- Lyrics Flight of Icarus -->
+    <string name="play_act_lyrics_03" translatable="false">
+        As the sun breaks above the ground\n
+        An old man stands on the hill\n
+        As the ground warms to the first rays of light\n
+        A birdsong shatters the still\n\n
+
+        His eyes are ablaze\n
+        See the madman in his gaze\n\n
+
+        Fly on your way, like an eagle\n
+        Fly as high as the sun\n
+        On your way, like an eagle\n
+        Fly and touch the sun\n\n
+
+        Now the crowd breaks and a young boy appears\n
+        Looks the old man in the eye\n
+        As he spreads his wings and shouts at the crowd\n
+        In the name of God, my father, I fly\n\n
+
+        His eyes seem so glazed\n
+        As he flies on the wings of a dream\n
+        Now he knows his father betrayed\n
+        Now his wings turn to ashes, to ashes his grave\n\n
+
+        Fly on your way, like an eagle\n
+        Fly as high as the sun\n
+        On your way, like an eagle\n
+        Fly and touch the sun\n\n
+
+        Fly, on your way, like an eagle\n
+        Fly as high as the sun\n
+        On your way, like an eagle\n
+        Fly as high as the sun\n
+        On your way, like an eagle\n
+        Fly, touch the sun\n
+        On your way, like an eagle\n
+        Fly\n\n
+
+        Fly as high as the sun\n
+    </string>
+    <!-- Lyrics Aces High -->
+    <string name="play_act_lyrics_04" translatable="false">
+        There goes the siren that warns off the air raid\n
+        Then comes the sound of the guns sending flak\n
+        Out for the scramble we\'ve got to get airborne\n
+        Got to get up for the coming attack\n\n
+        
+        Jump in the cockpit and start up the engines\n
+        Remove all the wheelblocks\n
+        There\'s no time to waste\n
+        Gathering speed as we head down the runway\n
+        Gotta get airborne before it\'s too late\n\n
+        
+        Running, scrambling, flying\n
+        Rolling, turning, diving, going in again\n
+        Run, live to fly, fly to live, do or die\n
+        Won\'t you run, live to fly,\n
+        Fly to live, Aces high\n\n
+
+        Move in to fire at the mainstream of bombers\n
+        Let off a sharp burst and then turn away\n
+        Roll over, spin round to come in behind them\n
+        Move to their blindsides and firing again\n\n
+        
+        Bandits at 8 o\'clock move in behind us\n
+        Ten ME-109\'s out of the sun\n
+        Ascending and turning out spitfires to face them\n
+        Heading straight for them I press my guns.\n\n
+        
+        Rolling, turning, diving\n
+        Rolling, turning, diving, going in again\n
+        Rolling, turning, diving\n
+        Rolling, turning, diving\n\n
+
+        Run, live to fly, fly to live, do or die\n
+        Won\'t you run, live to fly, fly to live, Aces high.\n
+    </string>
+    <!-- Lyrics Wasted Years -->
+    <string name="play_act_lyrics_05" translatable="false">
+        From the coast of gold, across the seven seas,\n
+        I\'m traveling on, far and wide,\n
+        But now it seems, I\'m just a stranger to myself,\n
+        And all the things I sometimes do, it isn\'t me but someone else.\n\n
+
+        I close my eyes, and think of home,\n
+        Another city goes by, in the night,\n
+        Ain\'t it funny how it is, you never miss it til it\'s gone away,\n
+        And my heart is lying there and will be til my dying day.\n\n
+
+        So understand\n
+        Don\'t waste your time always searching for those wasted years,\n
+        Face up, make your stand,\n
+        And realize you\'re living in the golden years.\n\n
+
+        Too much time on my hands, I got you on my mind,\n
+        Can\'t ease this pain, so easily,\n
+        When you can\'t find the words to say, it\'s hard to make it through another day,\n
+        And it makes me want to cry, and throw my hands up to the sky.\n\n
+
+        So understand\n
+        Don\'t waste your time always searching for those wasted years,\n
+        Face up, make your stand,\n
+        And realize you\'re living in the golden years.\n
+    </string>
+    <!-- Lyrics The Evil That Man Do -->
+    <string name="play_act_lyrics_06" translatable="false">
+        Love is a razor and I walked the line on that silver blade\n
+        Slept in the dust with his daughter, her eyes red with\n
+        The slaughter of innocence\n
+        And I will pray for her.\n
+        I will call her name out loud.\n
+        I would bleed for her.\n
+        If I could only see her now.\n\n
+        
+        Living on a razor\'s edge.\n
+        Balancing on a ledge.\n
+        Living on a razor\'s edge on&#8230;\n
+        Balancing on a ledge on&#8230;\n
+        Balancing on a ledge on&#8230;\n
+        Living on a razor\'s edge.\n
+        Balancing on a ledge you know &#8230; you know !!\n\n
+        
+        The evil that men do lives on and on !&#8230;.[x4]\n\n
+        
+        Circle of fire my baptism of joy at an end it seems\n
+        The seventh lamb slain, the book of life opens before me.\n
+        And I will pray for you.\n
+        &#8230;Some day I may return.\n
+        Don\'t you cry for me\n
+        Beyond is where I learn.\n\n
+        
+        Living on a razor\'s edge.\n
+        Balancing on a ledge.\n
+        Living on a razor\'s edge you know&#8230; you know !!\n\n
+        
+        The evil that men do lives on and on! [x4]\n\n
+        
+        Living on a razor\'s edge.\n
+        Balancing on a ledge.\n
+        Living on a razor\'s edge you know &#8230; you know !!\n\n
+        
+        The evil that men do lives on and on! [x4]\n\n
+        The evil !\n
+        The evil !\n
+        The evil that men do&#8230;\n\n
+        The evil !\n
+        The evil !\n
+        The evil that men do&#8230;\n\n
+        Yeah yeah!!\n
+    </string>
+    <!-- Lyrics Bring your Daughter...to the Slaughter -->
+    <string name="play_act_lyrics_07" translatable="false">
+        Honey its getting close to midnight, and all the myths are still in town\n
+        True love and lipstick on your linen, bite the pillow make no sound\n
+        If there\'s some living to be done before your life becomes your tomb\n
+        You\'d better know that I\'m the one, so unchain your back door invite me around \n\n
+        
+        Bring your daughter, bring your daughter to the slaughter\n
+        Let her go, let her go, let her go\n
+        Bring your daughter, bring your daughter to the slaughter\n
+        Let her go, let her go, let her go\n
+        Let her go, yeah! \n\n
+
+        Honey its getting close to daybreak, the sun is creeping in the sky\n
+        No patent remedies for heartache, just empty words and humble pie\n
+        So get down on your knees honey, assume an attitude\n
+        You just pray that I\'ll be waiting cos you know I\'m coming soon \n\n
+        
+        Bring your daughter, bring your daughter to the slaughter\n
+        Let her go, let her go, let her go\n
+        Bring your daughter, bring your daughter to the slaughter\n
+        Let her go, let her go, let her go\n\n
+        
+        So pick up your foolish pride, no going back\n
+        No where, no way, no place to hide\n\n
+        
+        Bring your daughter, bring your daughter\n
+        Bring your daughter, bring your daughter\n
+        Bring your daughter, bring your daughter to the slaughter\n\n
+
+        Bring your daughter, fetch your daughter\n
+        Bring your daughter, fetch your daughter\n
+        Bring your daughter, fetch your daughter to the slaughter\n\n
+        
+        Bring your daughter, bring your daughter to the slaughter\n
+        Let her go, let her go, let her go\n\n
+
+        Bring your daughter, bring your daughter to the slaughter\n
+        Let her go, let her go, let her go\n
+    </string>
+    <!-- Lyrics Wasting Love -->
+    <string name="play_act_lyrics_08" translatable="false">
+        Maybe one day I\'ll be an honest man\n
+        Up till now I\'m doing the best I can\n
+        Long roads.Long days, of sunrise, to sunset\n
+        Sunrise to sunset\n\n
+        
+        Dream on brothers while you can\n
+        Dream on sisters I hope you will find the one\n
+        All of our lives, covered up quickly by the tides of time\n\n
+        
+        Spend your days full of emptiness\n
+        Spend your years full of loneliness\n
+        Wasting love, in a desperate caress\n
+        Rolling shadows of night\n\n
+        
+        Dream on brothers while you can\n
+        Dream on sisters I hope you will find the one\n
+        All of our lives, covered up quickly by the tides of time\n\n
+        
+        Sands are flowing and the lines are in your hand\n
+        In your eyes I see the hunger, and the desperate cry that tears the night\n\n
+        
+        Spend your days full of emptiness\n
+        Spend your years full of loneliness\n
+        Wasting love, in a desperate caress\n
+        Rolling shadows of night\n
+    </string>
+    <!-- Lyrics Fortunes of War -->
+    <string name="play_act_lyrics_09" translatable="false">
+        After the war and now that they\'ve sent us homeward\n
+        I can\'t help but feel that I\'m on my own\n
+        No one can see just what this conflict has done to\n
+        The minds of the man who are on their way home\n\n
+        
+        I\'m scared for life but it\'s not my flesh that\'s wounded\n
+        So how can I face the torment alone\n
+        The vivid scenes and all the recurring nightmares\n
+        I lay there and sweat until it gets light&#8230;\n\n
+        
+        People say Don\'t worry\n
+        Say that time\'s a perfect healer\n
+        That the nightmares they will come to pass\n
+        Can\'t hear what they\'re saying\n
+        I am living in my own world\n
+        And I\'m feeling trance like all the time\n\n
+        
+        I hear voices in my head\n
+        Could I really be going crazy\n
+        In the night the visions seem so real\n
+        Do you care if you live or die\n
+        When you laugh are you really crying\n
+        You\'re not sure what\'s real anymore\n\n
+        
+        Fortunes of war\n
+        Fortunes of war no pain anymore\n\n
+        
+        Sometimes I wake\n
+        I feel that my spirit\'s broken\n
+        I wonder if I\'ve the strength&#8230;to carry on.\n
+    </string>
+    <!-- Lyrics The Clansman -->
+    <string name="play_act_lyrics_10" translatable="false">
+        Wake alone in the hills\n
+        With the wind in your face\n
+        It feels good to be proud\n
+        And be free and a race\n
+        That is part of a clan\n
+        And to live on highlands\n
+        And the air that you breathe\n
+        So pure and so clean\n\n
+        
+        When alone on the hills\n
+        With the wind in your hair\n
+        With a longing to feel\n
+        Just to be free\n\n
+        
+        It is right to believe\n
+        In the need to be free\n
+        It\'s a time when you die\n
+        And without asking why\n
+        Can\'t you see what they do\n
+        They are grinding us down\n
+        They are taking our land\n
+        That belongs to the clans\n\n
+        
+        Not alone with a dream\n
+        Just a want to be free\n
+        With a need to belong\n
+        I am a clansman&#8230;\n\n
+        
+        Freedom [x4]\n\n
+        
+        It\'s a time wrough with fear\n
+        It\'s a land wrough with change\n
+        Ancestors could hear\n
+        What is happening now\n
+        They would turn in their graves\n
+        They would all be ashamed\n
+        That the land of the free\n
+        Has been written in chains\n\n
+        
+        And I know what I want\n
+        When the timing is right\n
+        Then I\'ll take what is mine\n
+        I am the clansman\n\n
+        
+        And I swear to defend\n
+        And we\'ll fight to the end\n
+        And I swear that I\'ll never\n
+        Be taken alive\n
+        And I know that we\'ll stand\n
+        And we\'ll fight for our land\n
+        And I swear that my bairns\n
+        Will be born free\n\n
+        
+        And I know what I want\n
+        When the timing is right\n
+        Then I\'ll take what is mine\n
+        I am the clansman&#8230;\n\n
+        
+        Freedom [x4]\n\n
+        
+        [x2]\n
+        No, no we can\'t let them take anymore\n
+        No we can\'t let them take anymore\n
+        We\'ve the land of the free\n\n
+        
+        No, no we can\'t let them take anymore\n
+        No we can\'t let them take anymore\n
+        No we can\'t let them take anymore\n
+        We\'ve the land of the free\n\n
+        
+        Oh, oh-oh-oh-oh, oh-oh-oh-oh\n
+        Oh, oh-oh-oh-oh, oh-oh-oh-oh\n
+        Oh, oh-oh-oh-oh, oh-oh-oh-oh\n
+        
+        Freedom [x4]\n\n
+        
+        It is right to believe\n
+        In the need to be free\n
+        It\'s a time when you die\n
+        And without asking why\n
+        Can\'t you see what they do\n
+        They are grinding us down\n
+        They are taking our land\n
+        That belongs to the clans\n\n
+        
+        Not alone with a dream\n
+        Just a want to be free\n
+        With a need to belong\n
+        I am a clansman&#8230;\n\n
+        
+        And I know what I want\n
+        When the timing is right\n
+        Then I\'ll take what is mine\n
+        I am the clansman&#8230;\n\n
+        
+        Freedom [x4]\n\n
+        
+        And I know what I want\n
+        When the timing is right\n
+        Then I\'ll take what is mine\n
+        I am the clansman&#8230;\n
+    </string>
+    <!-- Lyrics The Mercenary -->
+    <string name="play_act_lyrics_11" translatable="false">
+        Pay to kill, die to lose, hunted, hunter which are you\n
+        Diablo come again to make trophies out of men\n
+        Lose your skin, lose your skull, one by one the sack is full\n
+        In the heat dehydrate, know which breath will be your last\n\n
+        
+        Nowhere to run, nowhere to hide, you\'ve got to kill to stay alive\n
+        Nowhere to run, nowhere to hide, you\'ve got to kill to stay alive\n\n
+        
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n\n
+        
+        Human heart, human mind, intellect intertwined\n
+        Focus sharp in the night, watch the jungle burning bright\n
+        Toe to toe throw the line, everyone\'s caught hand tied\n
+        Iron will iron fist, how could it have come to this?\n\n
+        
+        Nowhere to run, nowhere to hide, you\'ve got to kill to stay alive\n
+        Nowhere to run, nowhere to hide, you\'ve got to kill to stay alive\n\n
+        
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n\n
+        
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n
+        Show them no fear, show them no pain\n
+    </string>
+    <!-- Lyrics Paschendale -->
+    <string name="play_act_lyrics_12" translatable="false">
+        In a foreign field he lay\n
+        Lonely soldier, unknown grave \n
+        On his dying words he prays \n
+        Tell the world of Paschendale \n\n
+        
+        Relive all that he\'s been through \n
+        Last communion of his soul \n
+        Rust your bullets with his tears \n
+        Let me tell you \'bout his years \n\n
+        
+        Laying low in a blood filled trench \n
+        Kill Tim \'til my very own death \n
+        On my face I can feel the falling rain \n
+        Never see my friends again \n\n
+        
+        In the smoke, in the mud and lead \n
+        Smell the fear and the feeling of dread \n
+        Soon be time to go over the wall \n
+        Rapid fire and the end of us all \n\n
+        
+        Whistles, shouts and more gun fire \n
+        Lifeless bodies hang on barbed wire \n
+        Battlefield nothing but a bloody tomb \n
+        Be reunited with my dead friends soon \n\n
+        
+        Many soldiers eighteen years \n
+        Drown in mud, no more tears \n
+        Surely a war no-one can win \n
+        Killing time about to begin \n\n
+        
+        Home, far away \n
+        From the war, a chance to live again \n
+        Home, far away \n
+        But the war, no chance to live again \n\n
+        
+        The bodies of ours and our foes \n
+        The sea of death it overflows \n
+        In no man\'s land, God only knows \n
+        Into jaws of death we go \n\n
+        
+        Crucified as if on a cross \n
+        Allied troops they mourn their loss \n
+        German war propaganda machine \n
+        Such before has never been seen \n\n
+        
+        Swear I heard the angels cry \n
+        Pray to god no more may die \n
+        So that people know the truth \n
+        Tell the tale of Paschendale \n\n
+        
+        Cruelty has a human heart \n
+        Every man does play his part \n
+        Terror of the men we kill \n
+        The human heart is hungry still \n\n
+        
+        I stand my ground for the very last time \n
+        Gun is ready as I stand in line \n
+        Nervous wait for the whistle to blow \n
+        Rush of blood and over we go \n\n
+        
+        Blood is falling like the rain \n
+        Its crimson cloak unveils again \n
+        The sound of guns can\'t hide their shame \n
+        And so we die on Paschendale \n\n
+        
+        Dodging shrapnel and barbed wire \n
+        Running straight at the cannon fire \n
+        Running blind as I hold my breath \n
+        Say a prayer symphony of death \n\n
+        
+        As we charge the enemy lines \n
+        A burst of fire and we go down \n
+        I choke a cry but no-one hears \n
+        Fell the blood go down my throat \n\n
+        
+        Home, far away \n
+        From the war, a chance to live again \n
+        Home, far away \n
+        But the war, no chance to live again \n\n
+        
+        See my spirit on the wind \n
+        Across the lines, beyond the hill \n
+        Friend and foe will meet again \n
+        Those who died at Paschendale\n
+    </string>
+    <!-- Lyrics The Longest Day -->
+    <string name="play_act_lyrics_13" translatable="false">
+        In the gloom the gathering storm abates\n
+        In the ships gimlet eyes await\n
+        The call to arms to hammer at the gates\n
+        To blow them wide throw evil to its fate\n\n
+        
+        All summers long the drills to build the machine\n
+        To turn men from flesh and blood to steel\n
+        From paper soldiers to bodies on the beach\n
+        From summer sands to Armageddon\'s reach\n\n
+        
+        Overlord, your master not your god\n
+        The enemy coast dawning Grey with scud\n
+        These wretched souls puking, shaking fear\n
+        To take a bullet for those who sent them here\n\n
+        
+        The world\'s alight, the cliffs erupt in flame\n
+        No escape, remorseless shrapnel rains\n
+        Drowning men no chance for a warrior\'s fate\n
+        A choking death enter hell\'s gate\n\n
+        
+        Sliding we go, only fear on our side\n
+        To the edge of the wire,\n
+        And we rush with the tide\n
+        Oh the water is red,\n
+        With the blood of the dead\n
+        But I\'m still alive, pray to God I survive\n\n
+        
+        How long on this longest day\n
+        \'Til we finally make it through\n
+        How long on this longest day\n
+        \'Til we finally make it through\n\n
+        
+        The rising dead, faces bloated torn\n
+        They are relieved, the living wait their turn\n
+        Your number\'s up, the bullet\'s got your name\n
+        You still go on, to hell and back again\n\n
+        
+        Valhalla waits, valkyries rise and fall\n
+        The warrior tombs, lie open for us all\n
+        A ghostly hand reaches through the veil\n
+        Blood and sand, we will prevail\n\n
+        
+        Sliding we go, only fear on our side\n
+        To the edge of the wire,\n
+        And we rush with the tide\n
+        Oh the water is red,\n
+        With the blood of the dead\n
+        But I\'m still alive, pray to God I survive\n
+    </string>
+    <!-- Lyrics When the Wild Wind Blows -->
+    <string name="play_act_lyrics_14" translatable="false">
+        Have you heard what they said on the news today?\n
+        Have you heard what is coming to us all?\n
+        That the world as we know it will be coming to an end\n
+        Have you heard? Have you heard?\n\n
+        
+        He sees them in the distance, when the darkened clouds roll\n
+        He could feel tension in the atmosphere\n
+        He would look in the mirror see an old man now\n
+        Does it matter they survive somehow?\n\n
+        
+        They said there\'s nothing can be done about the situation\n
+        They said there\'s nothing you can do at all\n
+        To sit and wait around for something to occur\n
+        Did you know? Did you know?\n\n
+
+        As he stares across the garden looking at the meadows\n
+        And wonders if they\'ll ever grow again\n
+        The desperation of the situation getting graver\n
+        Getting ready when the wild wind blows\n\n
+        
+        Have you seen what they said on the news today?\n
+        Have you heard what they said about us all?\n
+        Do you know what is happening to just every one of us?\n
+        Have you heard? Have you heard?\n\n
+        
+        There will be a catastrophe the like we\'ve never seen\n
+        There will be something that will light the sky\n
+        That the world as we know it it will never be the same\n
+        Did you know? Did you know?\n\n
+        
+        He carries everything into the shelter not a fuss\n
+        Getting ready when the moment comes\n
+        He has enough supplies to last them for a year or two\n
+        Good to have because you never know\n\n
+        
+        They tell us nothing that we don\'t already know about\n
+        They tell us nothing that is real at all\n
+        They only fill us with the stuff that they want\n
+        Did you know? Did you know?\n\n
+        
+        He\'s nearly finished with the preparations for the day\n
+        He\'s getting tired that\'ll do for now\n
+        They are preparing for the very worst to come to them\n
+        Getting ready when the wild wind blows\n\n
+        
+        He sees the picture on the wall it\'s falling down\n
+        Upside down\n
+        He sees a teardrop from his wife roll down her face\n
+        Saying Grace\n\n
+        
+        Remember times they had they flash right through his mind\n
+        Left behind\n
+        Of a lifetime spent together long ago\n
+        Will be gone\n\n
+        
+        They\'ve been preparing for some weeks now\n
+        For when the crucial moment comes\n
+        To take their refuge in the shelter\n
+        Let them prepare for what will come\n\n
+        
+        They make a tea and sit there waiting\n
+        They\'re in the shelter feeling snug\n
+        Not long to wait for absolution\n
+        Don\'t make a fuss just sit and wait\n\n
+        
+        Can\'t believe all the lying\n
+        All the screens are denying\n
+        That the moments of truth have begun\n\n
+        
+        Can\'t you see it on the TV?\n
+        Don\'t believe them in the least bit\n
+        Now the days of our ending have begun\n
+        Say a prayer when it\'s all over\n
+        Survivors unite all as one\n
+        Got to try and help each other\n
+        Got the will to overcome\n
+        I can\'t believe all the lying\n
+        All the screens are denying\n
+        That the moments of truth have begun\n
+        Can\'t you see it on the TV?\n
+        Don\'t believe them in the least bit\n
+        Now the days of our ending have begun\n
+        When they found them had their arms wrapped around each other\n
+        Their tins of poison laying near by their clothes\n
+        The day they both mistook an earthquake for the fallout\n
+        Just another when the wild wind blows\n
+    </string>
+    <!-- Lyrics Speed of Light -->
+    <string name="play_act_lyrics_15" translatable="false">
+        Another time another place\n
+        A hollow universe in space\n
+        I took a trip to see the sights\n
+        I will be blacker than the night\n\n
+
+        One way ticket no returns\n
+        My shooting star so fast it burnt\n
+        On the edge that you can see\n\n
+
+        Let\'s shoot the moon you and me\n
+        I\'m not particular you\'ll see\n
+        Just a lonesome galaxy\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        At the speed of light\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        We slip into the night\n\n
+
+        I\'ll say a mass for you and wave\n
+        Shooting plasma from my grave\n\n
+
+        Event horizon lost in space\n
+        Running in a human race\n\n
+
+        I don\'t know where I don\'t know why\n
+        But somehow back in time again\n
+        I\'m on the edge that you can see\n\n
+
+        I\'m not particular at night\n
+        A single particle of me\n
+        You won\'t be tracking me by sight\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        At the speed of light\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        We slip into the night\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        At the speed of light\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        At the speed of light\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        At the speed of light\n\n
+
+        Shadows in the stars\n
+        We will not return\n
+        Humanity won\'t save us\n
+        At the speed of light\n\n
+
+        We slip into the night\n
+    </string>
+    <!--_________________________________________________________________________________________-->
+
+</resources>

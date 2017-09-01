@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+    Layout of each element in the SampleListView
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListElementRelLayParent">
+
+    <!-- Year Text -->
+    <TextView
+        android:id="@id/sample_act_year"
+        style="@style/ListElementYearTxt" />
+
+    <!-- Cover Image -->
+    <ImageView
+        android:id="@id/sample_act_cover"
+        style="@style/ListElementCoverImg" />
+
+    <!-- Title and Album Texts -->
+    <LinearLayout style="@style/ListElementLinLayTexts">
+        <!-- Title Text -->
+        <TextView
+            android:id="@id/sample_act_title"
+            style="@style/ListElementTitleText" />
+
+        <!-- Album Text -->
+        <TextView
+            android:id="@id/sample_act_album"
+            style="@style/ListElementAlbumText" />
+    </LinearLayout>
+</RelativeLayout>

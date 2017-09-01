@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+    default border used for some views, slightly rounded
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/colorPrimary" />
+
+    <stroke
+        android:width="@dimen/space_small"
+        android:color="@color/colorAccent" />
+
+    <padding
+        android:bottom="@dimen/space_medium"
+        android:left="@dimen/space_medium"
+        android:right="@dimen/space_medium"
+        android:top="@dimen/space_medium" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/space_small"
+        android:bottomRightRadius="@dimen/space_small"
+        android:topLeftRadius="@dimen/space_small"
+        android:topRightRadius="@dimen/space_small" />
+</shape>
