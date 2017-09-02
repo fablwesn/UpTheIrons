@@ -7,8 +7,7 @@ Iron Maiden Fan App (Android) for ABND by Google &amp; Udacity - 4th Project Sub
 - Proper landscape display
 - Every Studio Album released till today (2017)
 - Description title and text on top of each screen
-- Crazy Eddie the Head
-- Bonus for Pyromaniacs
+- Crazy Eddie the Head (Bonus for Pyromaniacs)
 - Band Info
 - Dancing Toasts instead of real music (!!)
 
@@ -44,4 +43,4 @@ To have everything displayed correctly, please fulfill following requirements:
   
 ## Final Note
 
-this has been done for educational purposes only!
+### this has been done for educational purposes only!
